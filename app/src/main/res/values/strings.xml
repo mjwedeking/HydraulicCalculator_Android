@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Hydraulic Calculator Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hydraulic Calculator</string>
+    <string name="nav_header_subtitle">mjwedeking@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_calculator">Calculator</string>
+    <string name="menu_conversion">Unit Conversion</string>
+    <string name="menu_hydconversion">Hydraulic Conversion</string>
+    <string name="menu_test">Test</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="title_details">Details</string>
+
+    <string name="calculate">Calculate</string>
+    <string name="flow">Flow</string>
+    <string name="rdoQVALabel">Q=VA</string>
+    <string name="rdoVQALabel">V=Q/A</string>
+    <string name="depth">Depth</string>
+    <string name="length">Length</string>
+    <string name="area">Area</string>
+    <string name="velocity">Velocity</string>
+    <string name="diameter">Diameter</string>
+    <string name="slope">Slope</string>
+    <string name="NValue">N Value</string>
+    <string name="inputFlowTimeLabel">Flow * Time = Volume Calc</string>
+    <string name="selectUnit_prompt">Select Units</string>
+    <string name="selectNValue_prompt">Select Pipe Material</string>
+    <string name="hint0">0.0</string>
+    <string name="hintNValue">0.013</string>
+    <string-array name="inputFlowUnits">
+        <item>mgd</item>
+        <item>gpm</item>
+        <item>gpd</item>
+        <item>cfs</item>
+        <item>AFY</item>
+        <item>AFD</item>
+        <item>cms</item>
+        <item>lps</item>
+    </string-array>
+    <string-array name="inputLengthUnits">
+        <item>inch</item>
+        <item>ft</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+    <string-array name="inputAreaUnits">
+        <item>in2</item>
+        <item>ft2</item>
+        <item>ac</item>
+        <item>ha</item>
+        <item>m2</item>
+    </string-array>
+    <string-array name="inputVelocityUnits">
+        <item>fps</item>
+        <item>mph</item>
+        <item>mps</item>
+        <item>kph</item>
+    </string-array>
+    <string-array name="inputSlopeUnits">
+        <item>ft/ft</item>
+        <item>%</item>
+        <item>m/m</item>
+    </string-array>
+    <string-array name="TimeUnits">
+        <item>sec</item>
+        <item>min</item>
+        <item>hr</item>
+        <item>day</item>
+        <item>yr</item>
+    </string-array>
+    <string-array name="VolumeUnits">
+        <item>gal</item>
+        <item>mg</item>
+        <item>AF</item>
+        <item>ft3</item>
+        <item>m3</item>
+        <item>l</item>
+    </string-array>
+    <string-array name="inputNValueList">
+        <item></item>
+        <item>PVC</item>
+        <item>Concrete</item>
+        <item>Vitrified Clay</item>
+    </string-array>
+    <string name="inputdDLabel">d/D</string>
+    <string name="inputQCapLabel">Q/CAP</string>
+    <string name="inputCapacityLabel">Pipe Capacity</string>
+    <string name="inputWetPerimeterLabel">Wetted Perimeter</string>
+    <string name="inputFlowAreaLabel">Flow Area</string>
+    <string name="inputVelHeadLabel">Velocity Head</string>
+    <string name="inputHydRadiusLabel">Hydraulic Radius</string>
+    <string name="hintInputLength">Input Length</string>
+    <string name="hintInputArea">Input Area</string>
+    <string name="hintInputVel">Input Velocity</string>
+    <string name="hintInputFlow">Input Flow</string>
+</resources>

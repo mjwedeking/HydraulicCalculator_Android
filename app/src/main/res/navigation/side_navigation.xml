@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/side_navigation"
+    app:startDestination="@+id/nav_calculator">
+
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="com.mjwedeking.navHydraulicCalc.ui.calculator.InputFragment"
+        android:label="@string/menu_calculator"
+        tools:layout="@layout/fragment_calculator_input" />
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.mjwedeking.navHydraulicCalc.ui.calculator.DetailsFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/nav_conversion"
+        android:name="com.mjwedeking.navHydraulicCalc.ui.conversion.ConversionFragment"
+        android:label="@string/menu_conversion"
+        tools:layout="@layout/fragment_conversion" />
+    <fragment
+        android:id="@+id/nav_hydconversion"
+        android:name="com.mjwedeking.navHydraulicCalc.ui.hydconversion.HydConversionFragment"
+        android:label="@string/menu_hydconversion"
+        tools:layout="@layout/fragment_hydconversion" />
+</navigation>

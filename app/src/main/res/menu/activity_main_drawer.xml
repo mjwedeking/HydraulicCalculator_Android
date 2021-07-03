@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calc_black_24dp"
+            android:title="@string/menu_calculator" />
+        <item
+            android:id="@+id/nav_details"
+            android:icon="@drawable/ic_details_black_24dp"
+            android:title="@string/title_details" />
+        <item
+            android:id="@+id/nav_conversion"
+            android:icon="@drawable/ic_conversion_black_24dp"
+            android:title="@string/menu_conversion" />
+        <item
+            android:id="@+id/nav_hydconversion"
+            android:icon="@drawable/ic_conversion_black_24dp"
+            android:title="@string/menu_hydconversion" />
+
+    </group>
+
+
+</menu>

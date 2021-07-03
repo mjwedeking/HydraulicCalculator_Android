@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inputConvFlowTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inputFlowTimeLabel"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputConvCalcFlowEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:digits="1234567890."
+        android:hint="@string/hint0"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/inputConvCalcTimeEditText"
+        app:layout_constraintTop_toBottomOf="@id/inputConvFlowTimeLabel" />
+
+    <Spinner
+        android:id="@+id/inputConvCalcFlowUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputFlowUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/inputConvCalcTimeUnitSpinner"
+        app:layout_constraintTop_toBottomOf="@id/inputConvCalcFlowEditText" />
+    <EditText
+        android:id="@+id/inputConvCalcTimeEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:digits="1234567890."
+        android:hint="@string/hint0"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toRightOf="@id/inputConvCalcFlowEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvFlowTimeLabel" />
+
+    <Spinner
+        android:id="@+id/inputConvCalcTimeUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/TimeUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintLeft_toRightOf="@id/inputConvCalcFlowUnitSpinner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvCalcFlowEditText" />
+
+    <EditText
+        android:id="@+id/outputConvCalcVolumeEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:digits="1234567890."
+        android:hint="@string/hint0"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvCalcTimeUnitSpinner" />
+
+    <Spinner
+        android:id="@+id/outputConvCalcVolumeUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/VolumeUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outputConvCalcVolumeEditText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

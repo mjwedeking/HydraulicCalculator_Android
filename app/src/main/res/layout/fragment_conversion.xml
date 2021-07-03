@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/inputConvLengthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/length"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputConvLengthEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:digits="1234567890."
+        android:hint="@string/hintInputLength"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvLengthEditText"
+        app:layout_constraintTop_toBottomOf="@id/inputConvLengthLabel" />
+
+    <Spinner
+        android:id="@+id/inputConvLengthUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputLengthUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintTop_toBottomOf="@id/inputConvLengthEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvLengthUnitSpinner"/>
+
+    <EditText
+        android:id="@+id/outputConvLengthEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:digits="1234567890."
+        android:hint="@string/length"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/inputConvLengthEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvLengthLabel" />
+
+    <Spinner
+        android:id="@+id/outputConvLengthUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputLengthUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintTop_toBottomOf="@id/inputConvLengthEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/inputConvLengthUnitSpinner"/>
+
+
+    <TextView
+        android:id="@+id/inputConvAreaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvLengthUnitSpinner" />
+
+    <EditText
+        android:id="@+id/inputConvAreaEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:digits="1234567890."
+        android:hint="@string/hintInputArea"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvAreaEditText"
+        app:layout_constraintTop_toBottomOf="@id/inputConvAreaLabel" />
+
+    <Spinner
+        android:id="@+id/inputConvAreaUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputAreaUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintTop_toBottomOf="@id/inputConvAreaEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvAreaUnitSpinner"/>
+
+    <EditText
+        android:id="@+id/outputConvAreaEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:digits="1234567890."
+        android:hint="@string/area"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@+id/inputConvAreaEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvAreaLabel" />
+
+    <Spinner
+        android:id="@+id/outputConvAreaUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputAreaUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintTop_toBottomOf="@id/inputConvAreaEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/inputConvAreaUnitSpinner"/>
+
+    <TextView
+        android:id="@+id/inputConvVelocityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/velocity"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvAreaUnitSpinner" />
+
+    <EditText
+        android:id="@+id/inputConvVelocityEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:digits="1234567890."
+        android:hint="@string/hintInputVel"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvVelocityEditText"
+        app:layout_constraintTop_toBottomOf="@id/inputConvVelocityLabel" />
+
+    <Spinner
+        android:id="@+id/inputConvVelocityUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputVelocityUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/outputConvVelocityUnitSpinner"
+        app:layout_constraintTop_toBottomOf="@id/inputConvVelocityEditText" />
+
+    <EditText
+        android:id="@+id/outputConvVelocityEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:digits="1234567890."
+        android:hint="@string/velocity"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toRightOf="@id/inputConvVelocityEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvVelocityLabel" />
+
+    <Spinner
+        android:id="@+id/outputConvVelocityUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputVelocityUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/inputConvVelocityUnitSpinner"
+        app:layout_constraintTop_toBottomOf="@id/inputConvVelocityEditText" />
+
+    <TextView
+        android:id="@+id/inputConvFlowLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flow"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvVelocityUnitSpinner" />
+
+    <EditText
+        android:id="@+id/inputConvFlowEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:digits="1234567890."
+        android:hint="@string/hintInputFlow"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvFlowEditText"
+        app:layout_constraintTop_toBottomOf="@id/inputConvFlowLabel" />
+
+    <Spinner
+        android:id="@+id/inputConvFlowUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputFlowUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/outputConvFlowUnitSpinner"
+        app:layout_constraintTop_toBottomOf="@id/inputConvFlowEditText" />
+
+    <EditText
+        android:id="@+id/outputConvFlowEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="wrap_content"
+        android:digits="1234567890."
+        android:hint="@string/flow"
+        android:inputType="number"
+        android:state_enabled="false"
+        app:layout_constraintLeft_toRightOf="@id/inputConvFlowEditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConvFlowLabel" />
+
+    <Spinner
+        android:id="@+id/outputConvFlowUnitSpinner"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="wrap_content"
+        android:entries="@array/inputFlowUnits"
+        android:prompt="@string/selectUnit_prompt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/inputConvFlowUnitSpinner"
+        app:layout_constraintTop_toBottomOf="@id/outputConvFlowEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
